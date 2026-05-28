@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavana N</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav">
+  <a class="brand" href="#top">KN</a>
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a class="nav-cta" href="assets/KavanaNResume_T7.pdf" target="_blank">Resume ↗</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <span class="badge"><span class="dot"></span>Open to internships · 2025</span>
+      <h1>Kavana<br/><em>N.</em></h1>
+      <p class="hero-desc">CS undergrad at MSRIT building fast, reasoned, production-minded systems — IAM graph engines, on-device vector indexing, AI healthcare pipelines.</p>
+      <div class="hero-ctas">
+        <a class="btn-prim" href="https://linkedin.com/in/kavana-n-829731274" target="_blank">LinkedIn ↗</a>
+        <a class="btn-ghost" href="https://github.com/KavanaN12" target="_blank">GitHub ↗</a>
+      </div>
+      <p class="sub-info">MSRIT · CS · CGPA 9.19 · Bengaluru</p>
+    </div>
+
+    <!-- RIGHT PANELS -->
+    <div class="hero-right">
+
+      <!-- Rotating internship panel -->
+      <div class="glass-panel intern-panel">
+        <div class="panel-arrow">↗</div>
+        <div class="rotate-slides" id="internSlides">
+          <div class="rslide active">
+            <p class="rslide-kicker">Samsung PRISM</p>
+            <h3>Student Research Intern</h3>
+            <p>Optimized Android vector indexing in Kotlin for 60K embeddings — up to 25× faster retrieval and sub-10ms ANN latency.</p>
+          </div>
+          <div class="rslide">
+            <p class="rslide-kicker">Research highlight</p>
+            <h3>HNSW · IVFPQ · LSH</h3>
+            <p>Designed and benchmarked five ANN indexing strategies with memory-aware optimizations: loop unrolling, object pooling, cache-aware traversal.</p>
+          </div>
+          <div class="rslide">
+            <p class="rslide-kicker">Outcome</p>
+            <h3>25× · &lt;10ms · 60K</h3>
+            <p>25× faster retrieval, sub-10ms ANN search latency, across 60K embeddings on-device — no cloud dependency.</p>
+          </div>
+        </div>
+        <div class="slide-dots" id="internDots">
+          <button class="sdot active" data-idx="0"></button>
+          <button class="sdot" data-idx="1"></button>
+          <button class="sdot" data-idx="2"></button>
+        </div>
+      </div>
+
+      <!-- Projects quick-link panel -->
+      <div class="glass-panel proj-link-panel" id="heroProjectPanel">
+        <div class="panel-arrow">↗</div>
+        <p class="rslide-kicker">Projects</p>
+        <div class="mini-proj-grid">
+          <button class="mini-proj-chip" data-proj="darkstate">DarkState <span>Cloud IAM</span></button>
+          <button class="mini-proj-chip" data-proj="digital-twin">Digital Twin <span>Blockchain</span></button>
+          <button class="mini-proj-chip" data-proj="healsync">HealSync <span>Healthcare AI</span></button>
+          <button class="mini-proj-chip" data-proj="scanner">Vuln Scanner <span>Security</span></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- stats bar -->
+  <div class="hero-stats">
+    <div class="hstat"><span>25×</span><p>ANN retrieval speedup</p></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><span>&lt;10ms</span><p>search latency</p></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><span>99%</span><p>on-chain write reduction</p></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><span>9.19</span><p>CGPA / 10</p></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><span>2nd</span><p>HackMCE 2025</p></div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS (horizontal sliding) ═══ -->
+<section class="projects" id="projects">
+  <div class="sec-header">
+    <p class="eyebrow">Work</p>
+    <h2>Projects</h2>
+    <div class="scroll-btns">
+      <button class="scbtn" id="scrollLeft">←</button>
+      <button class="scbtn" id="scrollRight">→</button>
+    </div>
+  </div>
+
+  <div class="proj-track-wrap">
+    <div class="proj-track" id="projTrack">
+
+      <article class="proj-card" data-proj="darkstate">
+        <div class="proj-card-inner">
+          <span class="proj-tag">Cloud Security</span>
+          <h3>DarkState</h3>
+          <p>IAM attack-path reasoning engine — privilege escalation, lateral movement, blast-radius.</p>
+          <div class="proj-card-footer">
+            <span>Python · Neo4j · FastAPI</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj="digital-twin">
+        <div class="proj-card-inner">
+          <span class="proj-tag">Blockchain</span>
+          <h3>Wind Power Digital Twin</h3>
+          <p>Hybrid blockchain/off-chain architecture with 99% on-chain write reduction for turbine SCADA.</p>
+          <div class="proj-card-footer">
+            <span>Python · MongoDB · Web3</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj="healsync">
+        <div class="proj-card-inner">
+          <span class="proj-tag tag-award">🏆 HackMCE 2025 — 2nd</span>
+          <h3>HealSync</h3>
+          <p>AI-powered medical document intelligence — OCR, LLM summarization, secure patient workflows.</p>
+          <div class="proj-card-footer">
+            <span>React · Node.js · OCR</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj="scanner">
+        <div class="proj-card-inner">
+          <span class="proj-tag">Security Tooling</span>
+          <h3>Static Vuln Scanner</h3>
+          <p>Aho-Corasick multi-pattern matching scanner for Java/Android code — 18s → 4s scan time.</p>
+          <div class="proj-card-footer">
+            <span>Java · Multithreading</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Project detail drawer -->
+  <div class="proj-detail-drawer" id="projDrawer">
+    <div class="drawer-inner">
+      <button class="drawer-close" id="drawerClose">✕</button>
+      <div class="drawer-meta" id="drawerMeta"></div>
+      <h3 id="drawerTitle"></h3>
+      <p id="drawerDesc"></p>
+      <ul id="drawerPoints"></ul>
+      <a id="drawerLink" class="btn-prim" href="#" target="_blank">View on GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section class="skills" id="skills">
+  <div class="sec-header">
+    <p class="eyebrow">Technical</p>
+    <h2>Skills</h2>
+  </div>
+
+  <div class="skill-bento">
+    <div class="sk-card sk-lang reveal" style="--d:0s">
+      <div class="sk-icon">{ }</div>
+      <h3>Languages</h3>
+      <div class="sk-pills"><span>Java</span><span>Kotlin</span><span>Python</span><span>C/C++</span><span>JavaScript</span></div>
+    </div>
+    <div class="sk-card sk-backend reveal" style="--d:0.08s">
+      <div class="sk-icon">⚙</div>
+      <h3>Backend & DevOps</h3>
+      <div class="sk-pills"><span>Node.js</span><span>Express</span><span>FastAPI</span><span>Docker</span><span>Kubernetes</span><span>Linux</span></div>
+    </div>
+    <div class="sk-card sk-data reveal" style="--d:0.16s">
+      <div class="sk-icon">◈</div>
+      <h3>Data Systems</h3>
+      <div class="sk-pills"><span>MongoDB</span><span>Neo4j</span><span>Vector Indexing</span><span>Graph Systems</span></div>
+    </div>
+    <div class="sk-card sk-cs reveal" style="--d:0.24s">
+      <div class="sk-icon">◇</div>
+      <h3>Core CS</h3>
+      <div class="sk-pills"><span>DSA</span><span>OS</span><span>CN</span><span>OOP</span><span>DBMS</span><span>Multithreading</span><span>Graph Algorithms</span></div>
+    </div>
+    <div class="sk-card sk-domain reveal" style="--d:0.32s">
+      <div class="sk-icon">⊕</div>
+      <h3>Domains</h3>
+      <div class="sk-pills"><span>Cloud Security</span><span>Backend Engineering</span><span>On-Device AI</span><span>Blockchain</span><span>NLP</span><span>Digital Twins</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ACHIEVEMENTS (sliding) ═══ -->
+<section class="achievements" id="achievements">
+  <div class="sec-header">
+    <p class="eyebrow">Recognition</p>
+    <h2>Achievements</h2>
+    <div class="scroll-btns">
+      <button class="scbtn" id="achPrev">←</button>
+      <button class="scbtn" id="achNext">→</button>
+    </div>
+  </div>
+
+  <div class="ach-stage">
+    <div class="ach-track" id="achTrack">
+
+      <div class="ach-slide active" data-proj="healsync">
+        <div class="ach-rank">2<sup>nd</sup></div>
+        <div class="ach-body">
+          <h3>HackMCE 2025</h3>
+          <p>24-hour national-level hackathon by Team DevOps, Malnad College of Engineering. Built HealSync — AI medical document intelligence platform.</p>
+          <span class="ach-link-hint">→ Connected to HealSync project</span>
+        </div>
+      </div>
+
+      <div class="ach-slide" data-proj="none">
+        <div class="ach-rank">3<sup>rd</sup></div>
+        <div class="ach-body">
+          <h3>ACM Hackventure 2025</h3>
+          <p>ACM Student Chapter hackathon at M. S. Ramaiah Institute of Technology.</p>
+          <span class="ach-link-hint">MSRIT · ACM</span>
+        </div>
+      </div>
+
+      <div class="ach-slide" data-proj="none">
+        <div class="ach-rank">★</div>
+        <div class="ach-body">
+          <h3>Academic Scholarship</h3>
+          <p>CGPA 9.19 at MSRIT · 95.84% in 12th (Alvas PU) · 98.4% in 10th (Christaraja School) · Scholarship holder.</p>
+          <span class="ach-link-hint">Academic merit</span>
+        </div>
+      </div>
+
+      <div class="ach-slide" data-proj="none">
+        <div class="ach-rank">SIH</div>
+        <div class="ach-body">
+          <h3>Smart India Hackathon</h3>
+          <p>Participant in the national-level government initiative hackathon.</p>
+          <span class="ach-link-hint">National level</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ach-dots" id="achDots">
+    <button class="adot active" data-idx="0"></button>
+    <button class="adot" data-idx="1"></button>
+    <button class="adot" data-idx="2"></button>
+    <button class="adot" data-idx="3"></button>
+  </div>
+
+  <!-- Certs -->
+  <div class="certs-strip reveal">
+    <p class="eyebrow">Certifications</p>
+    <div class="cert-pills">
+      <span>NPTEL — Software Engineering</span>
+      <span>NPTEL — Cloud Computing</span>
+      <span>IBM SkillBuild — Cloud Computing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer" id="contact">
+  <div class="footer-top reveal">
+    <div class="footer-left">
+      <h2>Let's connect.</h2>
+      <p>Bengaluru, India</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:1ms23cs086@msrit.edu">1ms23cs086@msrit.edu</a>
+      <a href="tel:+919449224652">+91 94492 24652</a>
+      <a href="https://linkedin.com/in/kavana-n-829731274" target="_blank">LinkedIn ↗</a>
+      <a href="https://github.com/KavanaN12" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>Kavana N · MSRIT CS 2027</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
